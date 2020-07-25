@@ -1,1 +1,1 @@
-sudo docker ps|grep v2_app_1 && docker stop v2_app_1 && docker rm v2_app_1
+sudo -u root docker ps|grep v2_app_1 && docker stop v2_app_1 && docker rm v2_app_1
