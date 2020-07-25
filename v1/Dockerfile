@@ -3,7 +3,7 @@ RUN /bin/sed -i 's,http://dl-cdn.alpinelinux.org,https://mirrors.aliyun.com,g' /
 WORKDIR /go/src/app
 ENV  GO111MODULE=on
 ENV  GOPROXY=https://goproxy.cn
-COPY . .
+COPY ../. .
 RUN apk update && apk add git \
     && go build -o chi
 
