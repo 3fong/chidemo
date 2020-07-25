@@ -4,4 +4,4 @@ services:
     build: .
     image: liulei3/chi:v1
     ports:
-      - "8094:8084"
+      - "8097:8084"
